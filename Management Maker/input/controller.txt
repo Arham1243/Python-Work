@@ -1,0 +1,62 @@
+public function {func_name}_listing()
+{
+${plural_var} = {model}::get();
+return view('admin.{folder_name}.list')->with('title', '{title} Management')->with(compact('{plural_var}'));
+}
+
+public function add_{func_name}()
+{
+return view('admin.{folder_name}.add')->with('title', 'Add {title}');
+}
+
+
+public function save_{func_name}(Request $request)
+{
+$request->validate([
+'title' => 'required',
+]);
+
+${singular_var} = {model}::create([
+'title' => $request['title'],
+]);
+return redirect()->route('admin.{func_name}_listing')->with('notify_success', '{title} Added Successfuly!!');
+}
+
+
+
+public function edit_{func_name}($id)
+{
+${singular_var} = {model}::where('id', $id)->first();
+return view('admin.{folder_name}.edit')->with('title', 'Edit {title}')->with(compact('{singular_var}'));
+}
+public function update_{func_name}(Request $request)
+{
+$request->validate([
+'title' => 'required',
+]);
+
+${singular_var} = {model}::where('id', $request->id)->update([
+'title' => $request['title'],
+]);
+
+return redirect()->route('admin.{func_name}_listing')->with('notify_success', '{title} Updated Successfuly!!');
+}
+public function suspend_{func_name}($id)
+{
+${singular_var} = {model}::where('id', $id)->first();
+if (${singular_var}->is_active == 0) {
+${singular_var}->is_active = 1;
+${singular_var}->save();
+return redirect()->route('admin.{func_name}_listing')->with('notify_success', '{title} Activated Successfuly!!');
+} else {
+${singular_var}->is_active = 0;
+${singular_var}->save();
+return redirect()->route('admin.{func_name}_listing')->with('notify_success', '{title} Suspended Successfuly!!');
+}
+}
+
+public function delete_{func_name}($id)
+{
+${singular_var} = {model}::where('id', $id)->delete();
+return redirect()->route('admin.{func_name}_listing')->with('notify_success', '{title} Deleted Successfuly!!');
+}

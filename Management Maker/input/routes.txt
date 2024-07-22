@@ -1,0 +1,9 @@
+// ---------------------------------------{model} Management---------------------------------------
+Route::get('/{management}-listing', [AdminDashController::class, '{func_name}_listing'])->name('admin.{func_name}_listing');
+Route::get('/add-{management}', [AdminDashController::class, 'add_{func_name}'])->name('admin.add_{func_name}');
+Route::post('/save-{management}', [AdminDashController::class, 'save_{func_name}'])->name('admin.save_{func_name}');
+Route::get('/edit-{management}/{id}', [AdminDashController::class, 'edit_{func_name}'])->name('admin.edit_{func_name}');
+Route::post('/update-{management}', [AdminDashController::class, 'update_{func_name}'])->name('admin.update_{func_name}');
+Route::get('/suspend-{management}/{id}', [AdminDashController::class, 'suspend_{func_name}'])->name('admin.suspend_{func_name}');
+Route::get('/delete-{management}/{id}', [AdminDashController::class, 'delete_{func_name}'])->name('admin.delete_{func_name}');
+// ---------------------------------------{model} Management---------------------------------------

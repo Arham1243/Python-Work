@@ -1,0 +1,11 @@
+{
+    "https://amazonkindleofficial.com/assets/css/style.css",
+    "https://amazonkindleofficial.com/assets/css/layout.css",
+    "https://amazonkindleofficial.com/assets/css/style.php",
+    "https://amazonkindleofficial.com/assets/css/custom.css",
+    "https://amazonkindleofficial.com/assets/css/bootstrap.css",
+    "https://amazonkindleofficial.com/assets/css/style.css",
+    "https://amazonkindleofficial.com/assets/css/owl.carousel.css",
+    "https://amazonkindleofficial.com/assets/css/style.css",
+    "https://amazonkindleofficial.com/assets/css/slicknav.css",
+}

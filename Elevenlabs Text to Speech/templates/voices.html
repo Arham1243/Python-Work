@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+<link rel="stylesheet" href="//cdn.datatables.net/2.0.1/css/dataTables.dataTables.min.css">
+    <title>Voices</title>
+</head>
+
+<body>
+    <div class="my-5">
+        <h1 class="text-center mb-4">All Voices</h1>
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="data-tables">
+                    <thead>
+                        <tr>
+                            <th scope="col">S.No</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Details</th>
+                            <th scope="col">Sample</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for voice in data.all_voices['voices'] %}
+                        <tr>
+                            <th scope="row">{{ loop.index }}</th>
+                            <td>{{ voice['name'] }}</td>
+                            <td>
+                                <div class="d-flex">
+                                    <ul class="list-group">
+                                        {% for key in voice['labels'].keys() %}
+                                        <li class="list-group-item">{{ key }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                    <ul class="list-group">
+                                        {% for value in voice['labels'].values() %}
+                                        <li class="list-group-item">{{ value }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <audio src="{{ voice['preview_url'] }}" controls></audio>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.datatables.net/2.0.1/js/dataTables.min.js"></script>
+
+
+    <script>
+        let table = new DataTable('#data-table');
+    </script>
+</body>
+
+</html>

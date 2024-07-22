@@ -1,0 +1,6 @@
+2024-06-20 05:32:53,666 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2024-06-20 05:32:53,666 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from C:\Users\USER\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\instabot\bot\bot.py
+2024-06-20 05:32:53,667 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2024-06-20 05:32:53,667 - instabot version: 0.117.0 (bot) - INFO - Bot stopped. Worked: 0:00:00.001918
+2024-06-20 05:32:53,668 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: D:\Arham Projects\Python\Custom Google Search/config/ashnakhn_14.checkpoint
+2024-06-20 05:32:53,668 - instabot version: 0.117.0 (bot) - INFO - Total requests: 0

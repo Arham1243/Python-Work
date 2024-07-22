@@ -1,0 +1,14 @@
+2024-06-20 05:36:59,373 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2024-06-20 05:36:59,373 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from C:\Users\USER\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\instabot\bot\bot.py
+2024-06-20 05:36:59,373 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2024-06-20 05:37:00,308 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/get_prefill_candidates/ returned response: <Response [200]>
+2024-06-20 05:37:01,196 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2024-06-20 05:37:02,076 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2024-06-20 05:37:02,981 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/contact_point_prefill/ returned response: <Response [200]>
+2024-06-20 05:37:04,324 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/login/ returned response: <Response [400]>
+2024-06-20 05:37:04,324 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message":"The password you entered is incorrect. Please try again.","status":"fail","error_title":"Incorrect password","buttons":[{"title":"OK","action":"dismiss"}],"invalid_credentials":true,"exception_name":"UserInvalidCredentials","error_type":"bad_password"}'
+2024-06-20 05:37:04,324 - instabot version: 0.117.0 (api) - ERROR - Request returns 400 error!
+2024-06-20 05:37:04,326 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: The password you entered is incorrect. Please try again.
+2024-06-20 05:37:04,326 - instabot version: 0.117.0 (api) - INFO - Error type: bad_password
+2024-06-20 05:37:04,328 - instabot version: 0.117.0 (api) - ERROR - Failed to login go to instagram and change your password
+2024-06-20 05:37:04,329 - instabot version: 0.117.0 (api) - INFO - Username or password is incorrect.

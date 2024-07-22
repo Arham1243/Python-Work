@@ -1,0 +1,17 @@
+{
+    "https://amazonkindleofficial.com/assets/js/owl.carousel.js",
+    "https://amazonkindleofficial.com/assets/js/font.js",
+    "https://amazonkindleofficial.com/assets/js/owl.js",
+    "https://amazonkindleofficial.com/assets/js/jquery.slicknav.js",
+    "https://amazonkindleofficial.com/assets/js/jquery.js",
+    "https://amazonkindleofficial.com/assets/slick/slick.min.js",
+    "https://amazonkindleofficial.com/assets/js/script.php",
+    "https://amazonkindleofficial.com/assets/js/wow.js",
+    "https://amazonkindleofficial.com/assets/js/bootstrap.js",
+    "https://amazonkindleofficial.com/assets/slick/slick.js",
+    "https://amazonkindleofficial.com/assets/js/font-awesome.js",
+    "https://amazonkindleofficial.com/assets/js/jquery-3.6.0.min.js",
+    "https://amazonkindleofficial.com/assets/js/fancybox.js",
+    "https://amazonkindleofficial.com/assets/js/slicknav.js",
+    "https://amazonkindleofficial.com/assets/js/custom.js",
+}
